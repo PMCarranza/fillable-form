@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fillable form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="top">
+        <div id="img"><img src="./images/pexels-pixabay-69122.jpg" alt="customer's image" title="customer's image">
+        </div>
+
+        <div id="side-text">
+            <p id="line1">logo goes here<br>customer's name</p>
+        </div>
+
+        <div id="banner">
+            logo and company's name on mobile
+        </div>
+
+        <div id="buttons">
+
+        </div>
+
+        <form>
+            <input type="radio" id="yes" name="choice" value="yes" aria-labelledby="yes">
+            <label>Customer wishes to add info</label>
+
+        </form>
+
+        <div class="form-section">
+            <form id="my-form">
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" class="form-control" id="train-name" aria-describedby="Name" placeholder="name">
+
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="./js/javascript.js"></script>
+</body>
+
+</html>
