@@ -1,11 +1,11 @@
 'use strict';
-$('#my-form').hide();
+// $('#my-form').hide();
 
 var choice;
 
-$('#yes').on('click', function (radio) {
+$('#revealAddress').on('click', function (radio) {
+    console.log('clicked')
     // radio.preventDefault();
     $('#my-form').show();
-    console.log(choice);
 
 })

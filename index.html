@@ -12,45 +12,325 @@
 
 <body>
     <div class="top">
-        <div id="img"><img src="./images/pexels-pixabay-69122.jpg" alt="customer's image" title="customer's image">
+        <div id="img">
+            <img src="./images/pexels-pixabay-144237.jpg" alt="customer's image" title="customer's image">
         </div>
+    </div>
 
-        <div id="side-text">
-            <p id="line1">logo goes here<br>customer's name</p>
-        </div>
+    <div id="side-text">
+        <p id="line1">logo goes here<br>customer's name</p>
+    </div>
 
-        <div id="banner">
-            logo and company's name on mobile
-        </div>
+    <div id="banner">
+        logo and company's name on mobile
+    </div>
 
-        <div id="buttons">
+    <div class="main">
 
-        </div>
+        <form name="halForm" id="halForm" method="post" action="eh_post.asp" onsubmit="return verify()">
 
-        <form>
-            <input type="radio" id="yes" name="choice" value="yes" aria-labelledby="yes">
-            <label>Customer wishes to add info</label>
+            <input name="adCode" value="H20IEH03XX" type="hidden">
+
+            <h1>Enter to win a 7-Day cruise for two with Holland America Line to your choice of Europe, Caribbean,
+                Alaska, Mexico or Canada &amp; New England!</h1>
+
+            <p class="intro" id="formStartsHere">Sign up below for a chance to win a cruise with Holland America Line.
+                For more than 145 years, we've treated our guests to award-winning service, captivating onboard
+                enrichment programs and sophisticated five-star dining. We invite you to travel aboard our elegant,
+                mid-sized ships and discover this world of possibilities for yourself.</p>
+
+            <h2>Sign up for your chance to win:</h2>
+
+            <div id="errBox" class="alert" tabindex="0">Please check the form and ensure all the required fields are
+                completed.</div>
+            <div class="contactInfo">
+                <div class="row clearfix">
+                    <div class="formCol">
+                        <label class="req" for="FirstName">First Name</label>
+                        <input type="text" id="FirstName" name="FirstName" aria-required="true">
+                    </div>
+                    <div class="formCol">
+                        <label class="req" for="LastName">Last Name</label>
+                        <input type="text" id="LastName" name="LastName" aria-required="true">
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="formCol">
+                        <label class="req" for="Email">Email</label>
+                        <input type="text" id="Email" name="Email" aria-required="true">
+                    </div>
+                    <div class="formCol">
+                        <label class="req" for="Phone">Phone Number</label>
+                        <input type="text" id="Phone" name="Phone" aria-required="true">
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="formCol">
+                        <label class="req" for="Country">Country</label>
+                        <select name="Country" id="Country" aria-required="true" class="pretty-dropdown">
+                            <option selected="selected" value="">Select One</option>
+                            <option value="US">UNITED STATES</option>
+                            <option value="CA">CANADA</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <p class="intro">Printed Cruise Guides are a great resource for exploring and finding the perfect cruise
+                    vacation with Holland America Line. Provide your postal mailing address and we will include you on
+                    future mailings.</p>
+                <label class="label-reveal" for="b"><input type="checkbox" id="revealAddress"
+                        name="has_address" value="0">Yes, I'd like to sign up for Holland America Line postal
+                    mailings</label>
+
+                <div class="the-address" id="my-form">
+                    <div class="row clearfix">
+                        <div class="formCol">
+                            <label class="req" for="Address1">Address 1</label>
+                            <input type="text" id="Address1" name="Address1" aria-required="true">
+                        </div>
+                        <div class="formCol">
+                            <label for="Address2">Address 2</label>
+                            <input type="text" id="Address2" name="Address2">
+                        </div>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="formCol">
+                            <label class="req" for="City">City</label>
+                            <input type="text" name="City" id="City" aria-required="true">
+                        </div>
+                        <div class="formCol">
+                            <label class="req" for="State_Province">State/Province</label>
+                            <select name="State_Province" id="State_Province" aria-required="true"
+                                class="pretty-dropdown">
+                                <option selected="selected" value="">Select One</option>
+                                <option value="">- UNITED STATES -</option>
+                                <option value="AK">ALASKA</option>
+                                <option value="AL">ALABAMA</option>
+                                <option value="AR">ARKANSAS</option>
+                                <option value="AZ">ARIZONA</option>
+                                <option value="CA">CALIFORNIA</option>
+                                <option value="CO">COLORADO</option>
+                                <option value="CT">CONNECTICUT</option>
+                                <option value="DC">DISTRICT OF COLUMBIA</option>
+                                <option value="DE">DELAWARE</option>
+                                <option value="FL">FLORIDA</option>
+                                <option value="GA">GEORGIA</option>
+                                <option value="HI">HAWAII</option>
+                                <option value="IA">IOWA</option>
+                                <option value="ID">IDAHO</option>
+                                <option value="IL">ILLINOIS</option>
+                                <option value="IN">INDIANA</option>
+                                <option value="KS">KANSAS</option>
+                                <option value="KY">KENTUCKY</option>
+                                <option value="LA">LOUISIANA</option>
+                                <option value="MA">MASSACHUSETTS</option>
+                                <option value="MD">MARYLAND</option>
+                                <option value="ME">MAINE</option>
+                                <option value="MI">MICHIGAN</option>
+                                <option value="MN">MINNESOTA</option>
+                                <option value="MO">MISSOURI</option>
+                                <option value="MS">MISSISSIPPI</option>
+                                <option value="MT">MONTANA</option>
+                                <option value="NC">NORTH CAROLINA</option>
+                                <option value="ND">NORTH DAKOTA</option>
+                                <option value="NE">NEBRASKA</option>
+                                <option value="NH">NEW HAMPSHIRE</option>
+                                <option value="NJ">NEW JERSEY</option>
+                                <option value="NM">NEW MEXICO</option>
+                                <option value="NV">NEVADA</option>
+                                <option value="NY">NEW YORK</option>
+                                <option value="OH">OHIO</option>
+                                <option value="OK">OKLAHOMA</option>
+                                <option value="OR">OREGON</option>
+                                <option value="PA">PENNSYLVANIA</option>
+                                <option value="RI">RHODE ISLAND</option>
+                                <option value="SC">SOUTH CAROLINA</option>
+                                <option value="SD">SOUTH DAKOTA</option>
+                                <option value="TN">TENNESSEE</option>
+                                <option value="TX">TEXAS</option>
+                                <option value="UT">UTAH</option>
+                                <option value="VA">VIRGINIA</option>
+                                <option value="VT">VERMONT</option>
+                                <option value="WA">WASHINGTON</option>
+                                <option value="WI">WISCONSIN</option>
+                                <option value="WV">WEST VIRGINIA</option>
+                                <option value="WY">WYOMING</option>
+                                <option value="">- CANADIAN PROVINCES -</option>
+                                <option value="AB">ALBERTA</option>
+                                <option value="BC">BRITISH COLUMBIA</option>
+                                <option value="MB">MANITOBA</option>
+                                <option value="NB">NEW BRUNSWICK</option>
+                                <option value="NF">NEWFOUNDLAND</option>
+                                <option value="NL">NEWFOUNDLAND/LABRADOR</option>
+                                <option value="NS">NOVA SCOTIA</option>
+                                <option value="NT">NORTHWEST TERRITORY</option>
+                                <option value="NU">NUNAVUT</option>
+                                <option value="ON">ONTARIO</option>
+                                <option value="PE">PRINCE EDWARD ISLAND</option>
+                                <option value="SK">SASKATCHEWAN</option>
+                                <option value="YT">YUKON TERRITORY</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="formCol">
+                            <label class="req" for="PostalCode">Postal Code:</label>
+                            <input type="text" name="PostalCode" id="PostalCode" aria-required="true">
+                        </div>
+                    </div>
+                </div>
+                <!--the-address-->
+
+            </div>
+            <!--contactInfo-->
+
+            <label for="primary_interest" class="req">What is your primary destination interest?</label>
+            <select name="qa_primary_interest" id="primary_interest" class="pretty-dropdown">
+                <option value="">Select One</option>
+                <option value="3|P">Alaska Cruises &amp; Land + Sea Journeys</option>
+                <option value="12|P">Asia &amp; Pacific</option>
+                <option value="25|P">Australia, New Zealand &amp; S. Pacific</option>
+                <option value="5|P">Bermuda</option>
+                <option value="37|P">Europe</option>
+                <option value="15|P">Canada &amp; New England</option>
+                <option value="6|P">Caribbean</option>
+                <option value="2|P">Holiday</option>
+                <option value="21|P">Grand Voyages</option>
+                <option value="31|P">Hawaii &amp; Tahiti</option>
+                <option value="9|P">South America &amp; Antarctica</option>
+                <option value="7|P">Mexico</option>
+                <option value="1|P">Panama Canal</option>
+            </select>
+
+            <fieldset>
+                <legend>What is your secondary destination interest?</legend>
+                <div class="labelSet">
+                    <label class="inlineLabel" for="Alaska"><input type="checkbox" id="Alaska" name="qa_chk_Alaska"
+                            value="3|S">Alaska Cruises &amp; Land+Sea Journeys</label>
+                    <label class="inlineLabel" for="Asia"><input type="checkbox" id="Asia" name="qa_chk_Asia"
+                            value="12|S">Asia &amp; Pacific</label>
+                    <label class="inlineLabel" for="Australia"><input type="checkbox" id="Australia" name="qa_chk_Aust"
+                            value="25|S">Australia, New Zealand &amp; S. Pacific</label>
+                    <label class="inlineLabel" for="Bermuda"><input type="checkbox" id="Bermuda" name="qa_chk_Bermuda"
+                            value="5|S">Bermuda</label>
+                    <label class="inlineLabel" for="Europe"><input type="checkbox" id="Europe" name="qa_chk_Europe"
+                            value="11|S">Europe</label>
+                    <label class="inlineLabel" for="Canada"><input type="checkbox" id="Canada" name="qa_chk_CanNE"
+                            value="15|S">Canada &amp; New England</label>
+                    <label class="inlineLabel" for="Caribbean"><input type="checkbox" id="Caribbean"
+                            name="qa_chk_Carribbean" value="6|S">Caribbean</label>
+                    <label class="inlineLabel" for="Holiday"><input type="checkbox" id="Holiday" name="qa_chk_Holiday"
+                            value="2|S">Holiday</label>
+                    <label class="inlineLabel" for="GrandVoyages"><input type="checkbox" id="GrandVoyages"
+                            name="qa_chk_Grand" value="21|S">Grand Voyages</label>
+                    <label class="inlineLabel" for="Hawaii"><input type="checkbox" id="Hawaii" name="qa_chk_Hawaii"
+                            value="31|S">Hawaii &amp; Tahiti</label>
+                    <label class="inlineLabel" for="SouthAmerica"><input type="checkbox" id="SouthAmerica"
+                            name="qa_chk_SouthAmerica" value="9|S">South America &amp; Antarctica</label>
+                    <label class="inlineLabel" for="Mexico"><input type="checkbox" id="Mexico" name="qa_chk_Mexico"
+                            value="7|S">Mexico</label>
+                    <label class="inlineLabel" for="Panama"><input type="checkbox" id="Panama" name="qa_chk_Panama"
+                            value="1|S">Panama Canal</label>
+                </div>
+            </fieldset>
+
+            <fieldset role="radiogroup" aria-required="true">
+                <legend class="req" id="haveTravelProfessional">Do you have a travel professional?</legend>
+                <label class="inlineLabel" for="useTravelProfessionalYes"><input type="radio" class="radio"
+                        name="qa_useTravelProfessional" id="useTravelProfessionalYes" value="125|1">Yes</label>
+                <label class="inlineLabel" for="useTravelProfessionalNo"><input type="radio" class="radio"
+                        name="qa_useTravelProfessional" id="useTravelProfessionalNo" value="125|2">No</label>
+            </fieldset>
+
+            <h2>Consent to receive marketing communications from Holland America Line</h2>
+            <div class="row clearfix">
+                <div class="formCol3">
+                    <fieldset role="radiogroup" aria-required="true">
+                        <legend class="req" id="oktomail">Ok to postal mail</legend>
+                        <label class="inlineLabel" for="s_contact_via_mailYes"><input type="radio" class="radio"
+                                name="qa_s_contact_via_mail" id="s_contact_via_mailYes" value="245|1">Yes</label>
+                        <label class="inlineLabel" for="s_contact_via_mailNo"><input type="radio" class="radio"
+                                name="qa_s_contact_via_mail" id="s_contact_via_mailNo" value="245|2">No</label>
+                    </fieldset>
+                </div>
+
+                <div class="formCol3">
+                    <fieldset role="radiogroup" aria-required="true">
+                        <legend class="req" id="oktoemail">Ok to email</legend>
+                        <label class="inlineLabel" for="s_contact_via_emailYes"><input type="radio" class="radio"
+                                name="qa_s_contact_via_email" id="s_contact_via_emailYes" value="246|1">Yes</label>
+                        <label class="inlineLabel" for="s_contact_via_emailNo"><input type="radio" class="radio"
+                                name="qa_s_contact_via_email" id="s_contact_via_emailNo" value="246|2">No</label>
+                    </fieldset>
+                </div>
+
+                <div class="formCol3">
+                    <fieldset role="radiogroup" aria-required="true">
+                        <legend class="req" id="oktophone">Ok to phone</legend>
+                        <label class="inlineLabel" for="s_contact_via_phoneYes"><input type="radio" class="radio"
+                                name="qa_s_contact_via_phone" id="s_contact_via_phoneYes" value="248|1">Yes</label>
+                        <label class="inlineLabel" for="s_contact_via_phoneNo"><input type="radio" class="radio"
+                                name="qa_s_contact_via_phone" id="s_contact_via_phoneNo" value="248|2">No</label>
+                    </fieldset>
+                </div>
+            </div>
+
+            <p>You may withdraw consent at any time by 1) editing the details of your account, 2) via the unsubscribe
+                link in emails, or 3) by contacting us at Holland America Line N.V., 450 Third Ave. W., Seattle, WA
+                98119 USA, ph: 1-877-724-5425.</p>
+
+            <p>
+                <label class="inlineLabel" id="rules" for="consentRules"><input type="checkbox" name="consentRules"
+                        id="consentRules" value="1" aria-required="true"><span class="reqInline">*</span>I acknowledge
+                    that I have read, understand, and agree to these <a
+                        href="ChooseYourCruise2020-2021SweepstakesOfficialRules.pdf" target="_blank">Official
+                        Rules</a>.</label>
+            </p>
+
+            <input type="hidden" name="source" value="Choose Your Cruise 2020-2021">
+            <input type="hidden" name="sourceURL" value="https://hal.dcgdv.com/enterhal/index-working.asp">
+            <input type="hidden" name="redirectTo" value="ehThanks.html">
+            <div id="captchabox">
+                <div class="g-recaptcha" data-sitekey="6LdNRw4UAAAAADOHCvC20HqE5Fdpz7sM7SIWZriE">
+                    <div style="width: 304px; height: 78px;">
+                        <div><iframe
+                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdNRw4UAAAAADOHCvC20HqE5Fdpz7sM7SIWZriE&amp;co=aHR0cHM6Ly9oYWwuZGNnZHYuY29tOjQ0Mw..&amp;hl=en&amp;v=2Mfykwl2mlvyQZQ3PEgoH710&amp;size=normal&amp;cb=x9v9mb4motsu"
+                                width="304" height="78" role="presentation" name="a-pyby9zssxf6j" frameborder="0"
+                                scrolling="no"
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                        </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                            class="g-recaptcha-response"
+                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div><iframe style="display: none;"></iframe>
+                </div>
+            </div>
+
+            <input type="submit" value="ENTER TO WIN">
 
         </form>
 
-        <div class="form-section">
-            <form id="my-form">
-                <div class="form-group">
-                    <label for="name">name</label>
-                    <input type="text" class="form-control" id="train-name" aria-describedby="Name" placeholder="name">
-
-                    <label for="phone">Enter your phone number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-
-                    <label for="email">Enter your email:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-            </form>
+        <div class="footer">
+            <p><strong>NO PURCHASE NECESSARY. PURCHASE WILL NOT INCREASE YOUR CHANCES OF WINNING.</strong></p>
+            <p>Please refer to <a class="footer track"
+                    href="https://www.hollandamerica.com/en_US/legal-privacy/privacy-policy.html"
+                    target="_blank">Privacy &amp; Cookies</a> for full details of how we use your personal data.
+                <br>
+                Holland America Line N.V., 450 Third Ave. W., Seattle, WA 98119 USA
+            </p>
+            <p><a href="https://www.hollandamerica.com/en_US/california-consumer-protection-act.html" target="_blank">Do
+                    Not Sell My Personal Information</a></p>
+            <p><a href="https://www.facebook.com/HALCruises" target="_blank">Facebook</a> | <a
+                    href="https://twitter.com/halcruises" target="_blank">Twitter</a></p>
         </div>
 
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script src="./js/javascript.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./js/javascript.js"></script>
 </body>
 
 </html>
