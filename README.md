@@ -32,5 +32,6 @@ Mariño Carranza (author)
 marino.carranza@gmail.com
 
 ## **Project Status**
+The project is in 'waiting' mode due to the pandemic, once cruiseships return to a more normal schedule again the final art needs to be approved before the development team can proceed with thier part.
 Development on this project will stop as soon as I am given the 'live' files to work on.
 
